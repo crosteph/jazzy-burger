@@ -1,0 +1,119 @@
+@use './utilities' as *;
+
+
+    @mixin container1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    
+    @mixin headerLogo{
+        width: 92px;
+        height: 80px;
+        flex-shrink: 0;
+    }
+    
+    @mixin headerLocation{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    @mixin headerLocationImg{
+        width: 23px;
+        height: 28.75px;
+        flex-shrink: 0;
+    }
+
+    
+    @mixin locationText{
+        font-family: Open Sans;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: $headline1;
+    }
+    
+    @mixin container2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @mixin products{
+        display: flex;
+        align-items: center;
+        margin-right: 35px;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    @mixin productImage{
+        width: 42.667px;
+        height: 32px;
+        flex-shrink: 0;
+    }
+
+    @mixin productText{
+        font-family: Open Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: center;
+        color: $headline1;
+    }
+
+    @mixin guest{
+        display: flex;
+        align-items: center;
+        margin-right: 35px;
+        gap: 8px;
+    }
+
+    @mixin guestImage{
+        width: 29px;
+        height: 31.071px;
+        flex-shrink: 0;
+        stroke-width: 2.071px;
+        color: $headline2;
+        stroke: rgba(0, 0, 0, 0.66);
+    }
+
+    @mixin guessText{
+        font-family: Open Sans;
+        font-size: 18px;
+        font-style: normal;
+        text-align: center;
+        font-weight: 700;
+        line-height: normal;
+        color: $headline2;
+    }
+
+    @mixin guestImage1{
+        width: 26.575px;
+        height: 16.41px;
+        flex-shrink: 0;
+        fill: #878787;
+    }
+
+    @mixin cart{
+        width: 25px;
+        height: 31.25px;
+        flex-shrink: 0;
+    }
+
+    
+// /Main styling/
+
+
+    @mixin mainImage{
+        width: 360px;
+        height: 750px;
+        flex-shrink: 0;
+        background: url(<path-to-image>), lightgray 0px -5.394px / 98.284% 100.514% no-repeat;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
